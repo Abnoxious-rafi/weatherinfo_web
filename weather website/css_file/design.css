@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: 17px;
+  font-family: cursive;
+}
+
+html {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/pexels-scottwebb-1084510.jpg);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background: #0082e6;
+  height: 70px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 70px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.search-input {
+  text-align: center;
+  font-size: 1.5em;
+  border-radius: 1em;
+}
+
+.search-button {
+  cursor: pointer;
+  font-size: 1.5em;
+  color: azure;
+  border-color: rgb(58, 35, 132);
+  background-color: rgb(8, 194, 245);
+  border-radius: 0.5em;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked~ul {
+    left: 0;
+  }
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.searchcity{
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-top: 3%;
+  text-align: center;
+  background-color: transparent;
+  height: 150px;
+}
+
+.searchtable{
+  margin-right: 40%;
+  align-items: center;
+  background-color: transparent;
+  margin-left: 30%;
+  border-radius: 1em;
+  width: 40%;
+  height: 100%;
+  border: 2.5px solid rgb(248, 206, 206);
+}
+.searchheadder{
+  background-color: #dbd7d7;
+  
+  border-radius: 1em;
+  font-size: 1.2em;
+}
+
+.tablebody{
+  background-color: transparent;
+}
+
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 5%;
+  margin-right: 7%;
+  margin-left: auto;
+  max-width: 1100px;
+  position: relative;
+  align-items: center;
+  background-color: transparent;
+}
+.random_place{
+  margin-left: 32%;
+  color: #313421;
+}
+.card-deck {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  text-align: center;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-3,
+.my-3 {
+  margin-bottom: 1rem !important;
+}
+
+.my-0.font-weight-normal {
+  font-size: 1.5em;
+  background-color: #dbd7d7;
+  border-radius: 0.5em;
+}
+
+.card-deck.card {
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1 0 0%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.card {
+  margin-right: 2.5em;
+  position: relative;
+  background-color: #dbd7d7;
+  border-radius: .5em;
+  border: 1px solid rgb(248, 206, 206);
+  box-shadow: 5px 5px 10px #656667;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+.card-body {
+  border-radius: 0.5em;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 0.5em;
+  width: 12em;
+  height: 3em;
+  border-radius: 0.7em;
+  background-color: #7570fa;
+  color: aliceblue;
+}
+
+.btn p {
+  font-size: 1.5em;
+}
