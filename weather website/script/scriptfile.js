@@ -1,10 +1,10 @@
 async function weather(city, id_city, id_temp, id_wind, id_cloud, mode) {//*
-	const url = 'https://weatherapi-com.p.rapidapi.com/current.json?q=' + city;
+	const url = 'Your api url';
 	const options = {
 		method: 'GET',
 		headers: {
-			'x-rapidapi-key': 'ef1b573084mshe86af9359761f6ep1691eejsnfbab685e7092',
-			'x-rapidapi-host': 'weatherapi-com.p.rapidapi.com'
+			'x-rapidapi-key': 'Your api key',
+			'x-rapidapi-host': 'your api host'
 		}
 	};
 
