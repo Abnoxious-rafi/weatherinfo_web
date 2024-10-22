@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/weather_website/css_file/design.css"> <!-- need to change location acording to server-->
+    <title>Weather Update</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav>
+        <label class="logo"><b style="color: black">Wea</b>ther</label>
+        <ul>
+            <li><a class="active" href="/weather website/html_file/home.html">Home</a></li>
+            <!--<li><a href="#">City</a></li>-->
+            <li><a href="https://earth.google.com/web/@15.70313307,123.27042623,-26999.72835384a,26032584.60747242d,35y,4.8473727h,0t,0r/data=CgRCAggBOgMKATBKDQj___________8BEAA">Map</a></li>
+            <li><a href="https://www.cou.ac.bd/">Contact</a></li>
+            <li><a href="/weather website/html_file/about.html">About</a></li>
+            <li>
+                <form class="form-search">
+                    <input class="search-input" id="search-input" type="search" placeholder="   City Name"
+                        aria-label="Search">
+                    <button class="search-button" id="search-button" type="submit">Search</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <!--  searchable city weather-->
+    <div class="searchcity">
+        <table class="searchtable">
+            <tr>
+                <th class="searchheadder"><span style="font-size: 1.2em;" id="city0"></span></th>
+            </tr>
+            <tr>
+                <td class="tablebody">
+                    <ul>
+                        <li>Temperature is <span id="temp0"></span></li>
+                        <li>Wind speed per hour is <span id="wind0"></span></li>
+                        <li>Cloud percentage is <span id="cloud0"></span></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- random city weather -->
+
+    <div class="container">
+        <h2 class="random_place">Some Random Places in World</h2>
+
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal"><span style="font-size: 0.9em;" id="city1"></span></h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Temperature is <span id="temp1"></span></li>
+                        <li>Wind speed per hour is <span id="wind1"></span></li>
+                        <li>Cloud percentage is <span id="cloud1"></span></li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-outline-primary">
+                        <p>Refresh</p>
+                    </button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal"><span style="font-size: 0.9em;" id="city2"></span></h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Temperature is <span id="temp2"></span></li>
+                        <li>Wind speed per hour is <span id="wind2"></span></li>
+                        <li>Cloud percentage is <span id="cloud2"></span></li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">
+                        <p>Refresh</p>
+                    </button>
+                </div>
+            </div>
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal"><span style="font-size: 0.9em;" id="city3"></span></h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Temperature is <span id="temp3"></span></li>
+                        <li>Wind speed per hour is <span id="wind3"></span></li>
+                        <li>Cloud percentage is <span id="cloud3"></span></li>
+                    </ul>
+                    <button type="button" class="btn btn-lg btn-block btn-primary">
+                        <p>Refresh</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="/weather website/script/scriptfile.js"></script> <!-- need to change location acording to server-->
+</body>
+
+</html>
